@@ -4,7 +4,7 @@ require 'faker'
 
 include Magick # 面倒くさいのでinclude
 
-IMG_SRC = 'data/octcat.png'
+IMG_SRC = 'octcat.png'
 
 fail('始まりと終わりを引数で指定してください') if ARGV.length < 2
 
