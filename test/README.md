@@ -32,11 +32,9 @@ SELECT  v.id            AS v_id,
         ORDER BY a_at, v_at;
 ```
 
-### ちょっと速い
+### 別の方法
 
-```
-100回で 2.0~2.1sec
-```
+特に速くない
 
 ```
 SELECT 
