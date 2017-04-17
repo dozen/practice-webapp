@@ -1,9 +1,15 @@
 article
-	 - get_theme(@id)['answers'].each do |k, answer|
-		div
-			div	
-				= answer['text']
-			div
-				- answer['votes'].each do |k, vote|
-					- if vote['comment']
-						p = p2star(vote['point']) + vote['user']['name'] + vote['comment']
+  - theme.each do |k, answer|
+    div.answer
+      div.text-center
+        img.rounded.img-thumbnail src = "/image/#{answer['image']}"
+      div.answer-text
+        h2 = answer['text']
+      div
+        - answer['votes'].each do |k, vote|
+          - if vote['comment']
+            div.row
+              div.col-sm-3
+                span.star = p2star(vote['point'])
+                = vote['user']['name']
+              div.col-sm-9 = vote['comment']

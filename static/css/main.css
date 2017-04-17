@@ -1,39 +1,56 @@
 body {
-	font-family: Georgia, "Tiems New Roman", Times, serif;
+        font-family: Georgia, "Tiems New Roman", Times, serif;
 }
 
 @media (min-width: 1200px) {
-	.container {
-		width: 970px;
-	}
+        .container {
+                width: 970px;
+        }
 }
 
 header {
-	background-color: #F0BA32;
-	margin: 0 0 30px;
+        background-color: #F0BA32;
+        margin: 0 0 30px;
 }
 
 nav {
-	position: relative;
-	display: inline-block;
-	padding: 10px;
-	font-weight: 500;
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        font-weight: 500;
 }
 
 a {
-	color: #4B75B9;
+        color: #4B75B9;
 }
 
 article {
-	margin-bottom: 60px;
+        margin-bottom: 60px;
+}
+
+.answer {
+        margin: 0px 0px 60px 0px; 
 }
 
 .sidebar-module {
-	padding: 15px;
-	margin: 0 -15px 15px
+        padding: 15px;
+        margin: 0 -15px 15px;
+}
+
+.answer-text {
+        text-align: center;
 }
 
 footer {
-	padding: 40px 0;
-	text-align: center;
+        padding: 40px 0;
+        text-align: center;
+}
+
+.vote {
+        margin: 10px;
+}
+
+.star {
+        color: #FFE600;
+        margin: 0 5px 0 0;
 }
