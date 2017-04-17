@@ -1,0 +1,9 @@
+article
+	 - get_theme(@id)['answers'].each do |k, answer|
+		div
+			div	
+				= answer['text']
+			div
+				- answer['votes'].each do |k, vote|
+					- if vote['comment']
+						p = p2star(vote['point']) + vote['user']['name'] + vote['comment']
